@@ -15,6 +15,7 @@ body {
 
 .column {
   float: left;
+  border: 1px solid red;
 }
 
 .layout-2-col .column {
@@ -23,7 +24,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1600px;
+  width: 1400px;
   border: 1px solid red;
 }
 
@@ -34,6 +35,16 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+
+span {
+  color: rgb(0, 153, 153);
+  font-weight: 800;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 /*
@@ -54,11 +65,6 @@ header
   padding: 15px 0 15px 100px;
 }
 
-.site-logo {
-  color: rgb(0, 255,208);
-  font-weight: 800;
-}
-
 ul li {
   display: inline-block;
   padding: 0 30px;
@@ -69,9 +75,63 @@ ul li {
 
 li:hover {
   cursor: pointer; /* do usunięcia po dodaniu linków do menu */
-  color: rgb(0, 255,208);
+  color: rgb(0, 153, 153);
 }
 
 li:first-child {
   padding-right: 100px;
+}
+
+/*
+
+hero-section
+
+*/
+
+.site-hero {
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+}
+
+.big-chair {
+  height: 500px;
+  width: 750px;
+  padding-left: 50px;
+}
+
+.site-title {
+  padding-top: 50px;
+  padding-right: 50px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title-paragraph {
+  color: #222;
+  opacity: 0.7;
+  line-height: 25px;
+  text-align: center;
+  padding: 0 100px;
+}
+
+.see-more-box {
+  background-color: rgb(0, 153, 153);
+  text-transform: uppercase;
+  padding: 15px 15px;
+  width: 200px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 6%;
 }
