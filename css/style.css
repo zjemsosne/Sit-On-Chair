@@ -23,7 +23,7 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1000px;
+  width: 1600px;
   border: 1px solid red;
 }
 
@@ -48,6 +48,30 @@ header
   text-transform: uppercase;
 }
 
+.text-logo {
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 15px 0 15px 100px;
+}
+
 .site-logo {
-  color: green;
+  color: rgb(0, 255,208);
+  font-weight: 800;
+}
+
+ul li {
+  display: inline-block;
+  padding: 0 30px;
+  float: right;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+li:hover {
+  cursor: pointer; /* do usunięcia po dodaniu linków do menu */
+  color: rgb(0, 255,208);
+}
+
+li:first-child {
+  padding-right: 100px;
 }
