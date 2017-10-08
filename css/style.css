@@ -9,6 +9,7 @@ layout
 }
 
 body {
+  font-family: 'Raleway';
   margin: 0;
 }
 
@@ -33,4 +34,20 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+
+/*
+
+header
+
+*/
+
+.site-header {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+
+.site-logo {
+  color: green;
 }
