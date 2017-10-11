@@ -53,6 +53,13 @@ a:link, a:visited {
   text-decoration: none;
 }
 
+/*underlines*/
+.shadow {
+  margin-left: 15px;
+  width: 14em;
+  box-shadow: 0 10px 0 rgb(0, 153, 153);
+}
+
 /*
 
 header
@@ -169,8 +176,8 @@ chair-section
 
 .chair-show {
   margin: 25px 33px;
-  height: 225px;
   width: 329px;
+  background-size: contain;
 }
 
 .box-1 {
@@ -191,8 +198,11 @@ h2 {
   margin: 15px 5px;
 }
 
-.shadow {
-  margin-left: 15px;
-  width: 14em;
-  box-shadow: 0 10px 0 rgb(0, 153, 153);
+.box-all-inputs {
+  height: 250px;
+  border: 1px solid #D3D3D3;
+}
+
+.input-section {
+  padding: 5px 15px;
 }
