@@ -4,7 +4,7 @@ layout
 
 */
 
-.box, .white, .box-all-inputs, .container, .column, .arrow {
+.box, .white, .box-all-inputs, .container, .column, .arrow, .plan-main, .plan-details {
   border: 1px solid red;
 }
 
@@ -15,6 +15,7 @@ layout
 body {
   font-family: 'Raleway';
   margin: 0;
+  padding: 0;
 }
 
 .column {
@@ -56,7 +57,7 @@ a:link, a:visited {
 /*underlines*/
 .shadow {
   margin-left: 15px;
-  width: 14em;
+  width: 250px;
   box-shadow: 0 10px 0 rgb(0, 153, 153);
 }
 
@@ -125,8 +126,9 @@ hero-section
 }
 
 .right-arrow {
-  padding: 0 50px;
-  float: right;
+  position: absolute;
+  z-index: 1;
+  margin-left: 547px;
 }
 
 .big-chair {
@@ -138,7 +140,7 @@ hero-section
 .title-span, .title-paragraph {
   display: inline-block;
   padding-top: 50px;
-  padding-right: 20px;
+  /*padding-right: 20px;*/
 }
 
 h1 {
@@ -177,7 +179,8 @@ chair-section
 .chair-show {
   margin: 25px 33px;
   width: 329px;
-  background-size: contain;
+  height: 225px;
+  background-size: cover;
 }
 
 .box-1 {
@@ -199,10 +202,221 @@ h2 {
 }
 
 .box-all-inputs {
-  height: 250px;
+  height: 275px;
   border: 1px solid #D3D3D3;
 }
 
 .input-section {
-  padding: 5px 15px;
+  padding: 2px 16px;
+  line-height: 150%;
+}
+
+/*
+
+price-list
+
+*/
+
+.price-list-section {
+  background-color: #f4f4f4;
+}
+
+.price-list {
+  background-color: #f4f4f4;
+  padding: 0 50px;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: 500;
+  color: #262525;
+  text-transform: uppercase;
+}
+
+.plan {
+  margin: 55px 30px;
+  height: 435px;
+  width: 335px;
+  border: 1px solid #D3D3D3;
+  position: relative;
+  background-color: rgb(251, 251, 251);
+}
+
+.price-shadow {
+  margin-left: 30px;
+}
+
+.outside-circle {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #D3D3D3;
+  position: absolute;
+  top: -8%;
+  right: 40%;
+  background-color: rgb(251, 251, 251);
+}
+
+.inside-circle {
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  border: 1px solid darkgray;
+  position: absolute;
+  top: 23%;
+  right: 23%;
+  background-color: darkgray;
+  opacity: 0.7;
+}
+
+.plan-main {
+  color: rgb(0, 153, 153);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.plan-details {
+  text-align: center;
+  width: 335px;
+  padding-top: 25px;
+}
+
+.plan-row {
+  height: 40px;
+  margin-top: 140px;
+  padding: 8px 5px;
+  text-align: center;
+}
+
+.buy-delivery-row {
+  background-color: rgb(224, 224, 224);
+}
+
+.plan-span-buy, .plan-span-service {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(157, 157, 157);
+}
+
+.service-row {
+  background-color: #f4f4f4;
+  height: 40px;
+  margin-top: 0;
+  width: 333px;
+}
+
+.warranty-row {
+  background-color: rgb(224, 224, 224);
+  height: 40px;
+  margin-top: 0;
+  width: 333px;
+}
+
+.advice-row {
+  background-color: #f4f4f4;
+  height: 40px;
+  margin-top: 0;
+  width: 333px;
+}
+.text {
+  display: inline-block;
+}
+
+.price-circle-div {
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #D3D3D3;
+  position: absolute;
+  top: 17%;
+  right: 32%;
+  background-color: rgb(251, 251, 251);
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.price-info-main {
+  font-size: 32px;
+  color: darkgrey;
+}
+
+.price-info-decimal {
+  position: relative;
+  top: -0.9em;
+  vertical-align: super;
+  font-size: 12px;
+  color: darkgrey;
+}
+
+.currency-info {
+  font-size: 12px;
+  color: rgb(189, 189, 189);
+}
+
+.join-me {
+  background-color: rgb(0, 153, 153);
+  text-transform: uppercase;
+  padding: 10px 15px;
+  width: 140px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 6%;
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+}
+
+/*
+
+hover
+
+*/
+
+.plan:hover {
+  background-color: rgb(0, 153, 153);
+}
+
+.plan:hover .price-info-main {
+  color: rgb(0, 153, 153);
+}
+
+.plan:hover .price-info-decimal {
+  color: rgb(0, 153, 153);
+}
+
+.plan:hover .currency-info {
+  color: rgb(0, 153, 153);
+}
+
+.plan:hover .plan-main {
+  color: white;
+}
+
+.plan:hover .join-me {
+  background-color: white;
+}
+
+.plan:hover a {
+  color: rgb(0, 153, 153);
+}
+
+.plan:hover .buy-delivery-row {
+  background-color: white;
+}
+
+.plan:hover .warranty-row {
+  background-color: white;
+}
+
+.plan:hover .inside-circle {
+  background-color: white;
+  border-color: white;
+  opacity: 1;
+}
+
+.plan:hover .outside-circle {
+  background-color: rgb(0, 153, 153);
+  border-color: rgb(0, 153, 153);
 }
