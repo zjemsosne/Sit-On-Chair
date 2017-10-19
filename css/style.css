@@ -4,8 +4,8 @@ layout
 
 */
 
-.box, .white, .box-all-inputs, .container, .column, .arrow, .plan-main, .plan-details, .agreement-checkbox {
-  border: 1px solid red;
+.white, .box-all-inputs, .container, .column, .icons, .arrow, .plan-main, .plan-details, .agreement-checkbox {
+  border: 1px solid transparent;
 }
 
 * {
@@ -13,7 +13,7 @@ layout
 }
 
 body {
-  font-family: 'Raleway';
+  font-family: 'Raleway', Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -44,7 +44,7 @@ body {
   clear: both;
 }
 
-span {
+span[class="site-logo"] {
   color: rgb(0, 153, 153);
   font-weight: 800;
 }
@@ -129,12 +129,14 @@ hero-section
   cursor: pointer;
   height: 500px;
   padding-top: 160px;
+  color: rgb(0, 153, 153);
+  margin-left: 40px
 }
 
 .right-arrow {
   position: absolute;
   z-index: 1;
-  margin-left: 547px;
+  margin-left: 507px;
 }
 
 .big-chair {
@@ -149,11 +151,17 @@ hero-section
   /*padding-right: 20px;*/
 }
 
+.title-span {
+  color: rgb(0, 153, 153);
+}
+
 h1 {
   font-size: 40px;
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 50px;
+  margin-right: 50px;
 }
 
 .title-paragraph {
@@ -161,7 +169,8 @@ h1 {
   opacity: 0.7;
   line-height: 25px;
   text-align: center;
-  padding: 0 100px;
+  padding: 0 75px;
+  margin-right: 50px;
 }
 
 .see-more-box {
@@ -172,7 +181,7 @@ h1 {
   font-weight: 500;
   letter-spacing: 1px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 185px;
   border-radius: 6%;
 }
 
@@ -186,7 +195,11 @@ chair-section
   margin: 25px 33px;
   width: 329px;
   height: 225px;
-  background-size: cover;
+  /*background-size: cover;*/
+}
+
+.box {
+  border: 1px solid #D3D3D3;
 }
 
 .box-1 {
@@ -494,6 +507,10 @@ label {
   margin: 15px 25px;
 }
 
+.agreement-span {
+  opacity: 0.3;
+}
+
 .send {
   background-color: rgb(0, 153, 153);
   text-transform: uppercase;
@@ -507,4 +524,42 @@ label {
   text-align: center;
   border-radius: 6%;
   float: right;
+}
+
+/*
+
+footer-section
+
+*/
+
+.site-footer {
+  margin-top: 50px;
+}
+
+.copyright-span {
+  opacity: 0.5;
+  font-size: 13px;
+  margin: 13px 30px;
+  display: inline-block;
+}
+
+.icons {
+  margin-left: 235px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.black-logo {
+  opacity: 0.7;
+  text-transform: uppercase;
+  font-size: 16px;
+  float: right;
+  margin: 13px 35px;
+  display: inline-block;
+}
+
+.footer-logo-inner {
+  font-weight: 800;
 }
