@@ -104,6 +104,48 @@ li:first-child {
 
 /*
 
+dropdown-menu
+
+*/
+
+.dropdown-content-about {
+  position: absolute;
+  background-color: black;
+  min-width: 100px;
+  padding: 0 15px;
+  z-index: 1;
+  color: white;
+  text-transform: none;
+  font-weight: 400;
+  margin-top: 25px;
+  transition: 1s all 0.05s;
+}
+
+.triangle {
+  position: absolute;
+  top: -10px;
+  margin-left: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 7.5px 10px 7.5px;
+  border-color: transparent transparent black transparent;
+  transition: 1s all 0.01s;
+}
+
+.dropdown-menu-about:not(:hover) .dropdown-content-about, .dropdown-menu-about:not(:hover) .triangle {
+  visibility: hidden;
+  background-color: transparent;
+  border-color: transparent;
+  transition-delay: 0s;
+}
+
+.dropdown-content-about > p:hover {
+  color: rgb(0, 153, 153);
+}
+
+/*
+
 hero-section
 
 */
@@ -116,10 +158,12 @@ hero-section
   background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
   background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  margin-top: 50px;
 }
 
 .arrow:hover {
   color: #555;
+  transition: 0.5s;
 }
 
 .arrow {
@@ -319,7 +363,7 @@ h3 {
 }
 
 .service-row {
-  background-color: #f4f4f4;
+  background-color: rgb(238, 238, 238);
   height: 40px;
   margin-top: 0;
   width: 333px;
@@ -333,7 +377,7 @@ h3 {
 }
 
 .advice-row {
-  background-color: #f4f4f4;
+  background-color: rgb(238, 238, 238);
   height: 40px;
   margin-top: 0;
   width: 333px;
@@ -395,49 +439,40 @@ hover
 
 .plan:hover {
   background-color: rgb(0, 153, 153);
-}
-
-.plan:hover .price-info-main {
-  color: rgb(0, 153, 153);
-}
-
-.plan:hover .price-info-decimal {
-  color: rgb(0, 153, 153);
-}
-
-.plan:hover .currency-info {
-  color: rgb(0, 153, 153);
-}
-
-.plan:hover .plan-main {
-  color: white;
-}
-
-.plan:hover .join-me {
-  background-color: white;
+  transition: 1s;
 }
 
 .plan:hover a {
   color: rgb(0, 153, 153);
+  transition: 0.3s;
 }
 
-.plan:hover .buy-delivery-row {
-  background-color: white;
+.plan:hover .price-info-main, .plan:hover .price-info-decimal, .plan:hover .currency-info {
+  color: rgb(0, 153, 153);
+  transition: 1s;
 }
 
-.plan:hover .warranty-row {
+.plan:hover .plan-main {
+  color: white;
+  transition: 1s;
+}
+
+.plan:hover .join-me, .plan:hover .buy-delivery-row, .plan:hover .warranty-row {
   background-color: white;
+  transition: 1s;
 }
 
 .plan:hover .inside-circle {
   background-color: white;
   border-color: white;
   opacity: 1;
+  transition: 1s;
 }
 
 .plan:hover .outside-circle {
   background-color: rgb(0, 153, 153);
   border-color: rgb(0, 153, 153);
+  transition: 1s;
 }
 
 /*
