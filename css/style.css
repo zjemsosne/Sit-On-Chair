@@ -303,6 +303,7 @@ h3 {
   border: 1px solid #D3D3D3;
   position: relative;
   background-color: rgb(251, 251, 251);
+  transition: background-color 1s;
 }
 
 .price-shadow {
@@ -318,6 +319,7 @@ h3 {
   top: -8%;
   right: 40%;
   background-color: rgb(251, 251, 251);
+  transition: background-color 1s;
 }
 
 .inside-circle {
@@ -330,6 +332,7 @@ h3 {
   right: 23%;
   background-color: darkgray;
   opacity: 0.7;
+  transition: background-color 1s;
 }
 
 .plan-main {
@@ -337,6 +340,7 @@ h3 {
   font-weight: 500;
   text-transform: uppercase;
   font-size: 20px;
+  transition: color 1s;
 }
 
 .plan-details {
@@ -354,12 +358,14 @@ h3 {
 
 .buy-delivery-row {
   background-color: rgb(224, 224, 224);
+  transition: background-color 1s;
 }
 
 .plan-span-buy, .plan-span-service {
   font-weight: 500;
   font-size: 20px;
   color: rgb(157, 157, 157);
+  transition: color 1s;
 }
 
 .service-row {
@@ -374,6 +380,7 @@ h3 {
   height: 40px;
   margin-top: 0;
   width: 333px;
+  transition: background-color 1s;
 }
 
 .advice-row {
@@ -402,6 +409,7 @@ h3 {
 .price-info-main {
   font-size: 32px;
   color: darkgrey;
+  transition: color 1s;
 }
 
 .price-info-decimal {
@@ -410,11 +418,13 @@ h3 {
   vertical-align: super;
   font-size: 12px;
   color: darkgrey;
+  transition: color 1s;
 }
 
 .currency-info {
   font-size: 12px;
   color: rgb(189, 189, 189);
+  transition: color 1s;
 }
 
 .join-me {
@@ -429,6 +439,7 @@ h3 {
   position: absolute;
   bottom: 20px;
   left: 100px;
+  transition: background-color 1s;
 }
 
 /*
