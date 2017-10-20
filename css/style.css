@@ -319,7 +319,7 @@ h3 {
   top: -8%;
   right: 40%;
   background-color: rgb(251, 251, 251);
-  transition: background-color 1s;
+  transition: background-color 1s, border-color 1s;
 }
 
 .inside-circle {
@@ -332,7 +332,7 @@ h3 {
   right: 23%;
   background-color: darkgray;
   opacity: 0.7;
-  transition: background-color 1s;
+  transition: background-color 1s, border-color 1s;
 }
 
 .plan-main {
