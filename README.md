@@ -1,7 +1,11 @@
 # Sit-On-Chair
 HTML/CSS Workshop for Coders Lab's "JavaScript developer: React" Course
 
-## The expected result:
+## Demo
+
+[Demo](https://zjemsosne.github.io/Sit-On-Chair/)
+
+## The expected results:
 ![Sit-on-chair](/images/workshop1.jpg)
 
 ## Task list:
