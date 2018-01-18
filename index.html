@@ -5,6 +5,8 @@
   <title>Sit On Chair</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+  <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
 
@@ -48,11 +50,20 @@
     <div class="container">
       <div class="row layout-2-col">
         <div class="column main-chair">
-          <span class="arrow left-arrow"><</span>
-          <img src="images/black_chair.png" class="big-chair" alt="Big Black Chair">
+          <span class="arrow left-arrow" id="prev"><</span>
+
+          <div class="slider">
+            <ul>
+              <li><img src="images/black_chair.png" class="big-chair slider-chair" alt="Big Black Chair"></li>
+              <li><img src="images/blue_chair.png" class="blue-chair slider-chair" alt="Big Blue Chair"></li>
+              <li><img src="images/pink_chair.png" class="pink-chair slider-chair" alt="Big Pink Chair"></li>
+              <li><img src="images/green_chair.png" class="green-chair slider-chair" alt="Big Green Chair"></li>
+            </ul>
+          </div>
+
         </div>
         <div class="column site-title">
-          <span class="arrow right-arrow">></span>
+          <span class="arrow right-arrow" id="next">></span>
           <h1>Sit <span class="title-span">on</span> our <span class="title-span"> chair</span></h1>
           <p class="title-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -69,7 +80,7 @@
     <div class="container">
       <div class="row layout-3-col">
         <div class="column chair-1">
-          <div class="chair-show box box-1">
+          <div class="chair-show box box-1 chairbox">
             <div class="white clair">
               <div class="shadow">
                 <h2>Chair CLAIR</h2>
@@ -78,7 +89,7 @@
           </div>
         </div>
         <div class="column chair-2">
-          <div class="chair-show box box-2">
+          <div class="chair-show box box-2 chairbox">
             <div class="white margarita">
               <div class="shadow">
                 <h2>Chair MARGARITA</h2>
@@ -207,6 +218,80 @@
     </div>
   </section>
 
+  <section class="compose-section clearfix">
+    <div class="container">
+      <div class="row layout-3-col">
+
+        <div class="column">
+          <div class="shadow2 contact-shadow">
+            <h3 class="compose-header">SKOMPONUJ SWOJE KRZESŁO</h3>
+          </div>
+          <div class="select-form">
+            <form>
+              <select id="select-main" name="chair-type">
+                <option disabled selected value>Wybierz rodzaj</option>
+                <option id="clair-price" value="clair" data-price="150">Clair</option>
+                <option value="margarita" data-price="250">Margarita</option>
+                <option value="selena" data-price="450">Selena</option>
+             </select>
+            </form>
+            <form>
+              <select id="chair-color" name="color-type">
+                <option disabled selected value>Wybierz kolor</option>
+                <option value="Czerwony" data-price="50">Czerwony</option>
+                <option value="Czarny" data-price="70">Czarny</option>
+                <option value="Pomarańczowy" data-price="60">Pomarańczowy</option>
+             </select>
+            </form>
+              <select id="chair-material" name="chair-material">
+                <option disabled selected value>Wybierz materiał</option>
+                <option value="Czerwony" data-price="50">Tkanina</option>
+                <option value="Czarny" data-price="300">Skóra</option>
+           </select>
+           </div>
+            <form>
+              <div class="transport-checkbox">
+              <label><input type="checkbox" name="agreement" id="transport-price" class="red-chair-checkbox" data-price="50"><span class="agreement-span transport-span">TRANSPORT</span></label>
+              </div>
+          </form>
+        </div>
+
+          <div class="column">
+            <img src="images/red_chair.png" class="contact-chair" alt="Red Chair">
+          </div>
+
+          <div class="column">
+            <div class="shadow2 contact-shadow summarize">
+              <h3 class="sum-header">PODSUMOWANIE</h3>
+            </div>
+            <div id="adjustment">
+              <div class="sum-box">
+                <div class="panel-left">
+                    <h4>Twój fotel</h4>
+                    <span>Kolor</span><br>
+                    <span>Materiał</span><br>
+                    <span>Transport</span>
+                </div>
+                <div class="panel-right">
+                  <h4 id="right-title" class="title">&nbsp;</h4>
+                  <span id="right-color">&nbsp;</span><br>
+                  <span id="right-pattern">&nbsp;</span><br>
+                  <span id="right-transport">&nbsp;</span>
+                </div>
+              <div class="total-price-label">SUMA</div>
+              <div id="total-total"class="total-price">&nbsp;</div>
+            </div>
+          </div>
+            <a href="#"><div class="see-more-box order-button">
+              ZAMAWIAM
+            </div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- contact section -->
   <section class="contact clearfix">
     <div class="container">
       <div class="row layout-3-col">

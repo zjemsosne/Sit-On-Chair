@@ -58,13 +58,13 @@ a:link, a:visited {
 .shadow {
   margin-left: 15px;
   width: 250px;
-  box-shadow: 0 10px 0 rgb(0, 153, 153);
+  box-shadow: 0 7px 0 rgb(0, 153, 153);
 }
 
 .shadow2 {
   margin-left: 15px;
   width: 335px;
-  box-shadow: 0 10px 0 rgb(0, 153, 153);
+  box-shadow: 0 7px 0 rgb(0, 153, 153);
 }
 
 /*
@@ -98,9 +98,10 @@ li:hover {
   color: rgb(0, 153, 153);
 }
 
-li:first-child {
+/* Niepotrzebne - do usunięcia */
+/*li:first-child {
   padding-right: 100px;
-}
+}*/
 
 /*
 
@@ -227,6 +228,10 @@ h1 {
   text-align: center;
   margin: 0 185px;
   border-radius: 6%;
+}
+
+.site-title {
+  padding-bottom: 50px;
 }
 
 /*
@@ -505,6 +510,7 @@ contact-section
   margin-top: 1.1em;
   border: 1px solid rgb(0, 153, 153);
   font-size: 20px;
+  font-family: 'Raleway', Arial, sans-serif;
 }
 
 textarea {
@@ -608,4 +614,115 @@ footer-section
 
 .footer-logo-inner {
   font-weight: 800;
+}
+
+/* Compose section*/
+
+.compose-section {
+  background-color: #f9f9f9;
+}
+
+.select-form {
+  margin-left: 30px;
+}
+
+.compose-header {
+  margin-bottom: -35px;
+}
+
+.transport-span {
+  padding-top: 15px;
+}
+
+select {
+  width: 250px;
+  padding: 10px;
+  margin-top: 1em;
+  border: 1px solid rgb(0, 153, 153);
+  font-size: 20px;
+  background-color: white;
+  color: grey;
+  opacity: 0.5;
+  font-family: 'Raleway', Arial, sans-serif;
+}
+
+.sum-box {
+  background-color: white;
+  margin-left: 10px;
+}
+
+#adjustment {
+  margin-right: 30px;
+}
+
+.panel-left {
+    display: inline-block;
+    width: 185px;
+    vertical-align: top;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    height: 135px;
+}
+
+.panel-right {
+    display: inline-block;
+    width: 150px;
+    border-left: 1px solid #e7e7e7;
+    text-align: right;
+    vertical-align: top;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    height: 135px;
+}
+
+h4 {
+  font-size: 20px;
+  color: rgb(0, 153, 153);
+  margin-top: 0;
+}
+
+.total-price-label {
+  font-size: 20px;
+  padding: 10px;
+  margin-left: -8px;
+}
+
+.order-button {
+  margin-left: 90px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.total-price-label, .total-price {
+  display: inline-block;
+}
+
+.total-price {
+  margin-left: 230px;
+}
+
+/* JS additions */
+
+.hidden {
+  display: none;
+  transition: 1s;
+}
+
+/* slider */
+
+.slider ul {
+    list-style: none;
+}
+
+.slider li {
+    display: none;
+}
+
+.slider .visible {
+    display: inline-block;
+}
+
+.slider-chair {
+  height: 337px;
+  width: 470px;
 }
